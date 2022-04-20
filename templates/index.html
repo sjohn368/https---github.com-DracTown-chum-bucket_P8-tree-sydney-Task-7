@@ -1,0 +1,26 @@
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <title>Job Details</title>
+  
+    <body style="background-color:#F4E9A4;">
+        <h1> Job Listings </h1>
+    </body>
+
+    <body>
+        <div>
+        
+            <ul>
+                {% for temp in temp %}
+                <li><strong>{{ temp['JOB Title'] }}</strong></li>
+                <ul>
+                    <li>{{ temp['Company Name'] }}</li>
+                    <li>{{ temp['JOB Description'] }}</li>
+                    <li>{{ temp['JOB Salary'] }}</li>
+                    <hr size="2" width="100%" color="#006400">  
+                </ul>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
